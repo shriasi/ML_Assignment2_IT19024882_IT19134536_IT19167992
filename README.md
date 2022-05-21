@@ -1,3 +1,5 @@
-# StudentPerformanceAnalyser
+# Decision Tree Implementation
 
-This is a student performance analyser using decision tree algorithm.
+This decision tree implementation is based on a common and publicly available dataset called Iris.
+
+Resoruce Link : https://www.kaggle.com/datasets/uciml/iris
