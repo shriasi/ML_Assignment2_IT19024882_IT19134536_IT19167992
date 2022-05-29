@@ -1,22 +1,8 @@
 import pickle
+#import decision classifier
 from sklearn.tree import DecisionTreeClassifier
-
-with open('iris_classifier.pickle','rb') as f:
-    clf = pickle.load(f)
-
-def main():
-    st.title('Iris-Species-Classifier')
-    sl = st.number_input('SepalLength')
-    sw = st.number_input('SepalWidth')
-    pl = st.number_input('PetalLength')
-    pw = st.number_input('PetalWidth')
-
-
-if __name__=='__main__':
-    main()
-import pickle
 import streamlit as st
-from sklearn.tree import DecisionTreeClassifier
+
 with open('iris_classifier.pickle','rb') as f:
     clf = pickle.load(f)
     
@@ -53,10 +39,7 @@ def main():
         maxVote = max(dataMap, key=dataMap.get)
 
         st.success(maxVote)
-
-
-
-
+#Get Output
 def getOutput(result):
     output = ''
     if result==0:
